@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+    --button-color: #3A4574;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    outline: none;
+    border: none;
+    appearance: none;
+    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: normal;
+    margin: 0;
+    transition: .5s;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: repeating-linear-gradient(
+        to right,
+        hsl(0, 0%, 25%, 0.06) 0 70px,
+        #ffffff 70px 100px
+      );
+    background-size: 1168px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* ============ шапка ============ */
+header{
+    width: 61%;
+    position: absolute;
+    top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+.nav{
+    margin: auto;
+    display: flex;
+    width: 454px;
+    justify-content: space-between;
+}
+.nav li{
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    transition: .5s;
+}
+.nav li:hover a{
+    color: #ffffff80;
+}
+a:hover {
+    color: #ffffff80;
+}
+.phone{
+    background: url(/img/tel.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 24px;
+    padding-left: 35px;
+}
+.phone:hover{
+    filter:opacity(0.5);
+}
+/* ============ тело ============ */
+
+main{
+
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*================== 1 экран ===================== */
+.sc1{
+    width: 100%;
+    height: 901px;
+    background: url(/img/screen1.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 264px;
+    
+    
+}
+.sc1 h2{
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 1.44px;
+    width: 61%;
+    
+}
+.sc1 h1{
+    margin-top: 24px;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+    width: 61%;
+}
+.sc1-bottom{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 61%;
+}
+.button{
+    background: var(--button-color);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 38px 64px;
+}
+.icons{
+    display: flex;
+    width: 267px;
+    justify-content: space-between;
+}
+.icons a:hover img{
+    filter: invert(27%) sepia(22%) saturate(1126%) hue-rotate(190deg) brightness(92%) contrast(94%);
+}
+/*================== 2 экран ===================== */
+.sc2{
+    position: relative;
+    width: 1168px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 178px;
+}
+.sc2 .address{
+    display: flex;
+    flex-direction: column;
+    width: 469px;
+    border-bottom: #E7E7E7 solid 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sc2 .address h2{
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+.sc2 .address p{
+    display: flex;
+    align-items: center;
+}
+.sc2 .address span{
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.sc2 .address img{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.sc2 .img1, .img2, .rectangle{
+    position: absolute;
+}
+.sc2 .img1{
+    top: 232px;
+    left: 502px;
+    z-index: 1;
+}
+.sc2 .img2{
+    top: 80;
+    left: 847px;
+    z-index: 1;
+}
+.sc2 .rectangle{
+    top: 131px;
+    left: 599px;
+}
+
+/*================== 3 экран ===================== */
+
+.sc3{
+    position: relative;
+    width: 100%;
+    height: 782px;
+    background-color: #3A4574;
+    padding-top: 219px;
+    position: relative;
+}
+.swiper{
+    display: flex;
+
+}
+.swiper-wrapper{
+    display: flex;
+}
+.swiper-slide{
+    display: flex !important;
+    flex-direction: column !important; 
+    align-items: center !important;
+}
+.swiper h2{
+    color: #D3B47F;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; 
+    width: 785px;
+    margin-top: 34px;
+}
+.swiper p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    width: 785px;
+}
+.swiper-button-prev{
+    position: absolute;
+    top: 351px;
+    left: 375px;
+    cursor: pointer;
+}
+.swiper-button-next{
+    position: absolute;
+    top: 351px;
+    right: 375px;
+    cursor: pointer;
+}
+#form{
+    position: fixed;
+    top: -100%;
+    border-radius: 15px;
+    width: 400px;
+    height: 300px;
+    background-color: var(--button-color);
+    filter: opacity(0.98);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+#form img{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+#form h1{
+    text-align: center;
+}
+#form p{
+    text-align: center;
+    font-weight: 400;
+}
+#form input{
+    width: 80%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: #fff solid 1px;
+    margin-bottom: 15px;
+}
+#form input[type="phone"]{
+    padding-left: 20px;
+}
+#form input[type='button']{
+    cursor: pointer;
+}
+#form label{
+    width: 80%;
+}
+.burger{
+    display: none;
+}
+.phone-mob{
+    display: none;
+}
+/* ========== адаптация ========== */
+@media screen and (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: repeating-linear-gradient(
+            to right,
+            hsl(0, 0%, 25%, 0.06) 0 70px,
+            #ffffff 70px 100px
+          );
+        background-size: 100%;
+    
+    }
+    /* ============ шапка ============ */
+    header{
+        width: 100%;
+        position: absolute;
+        top: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 2;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .logo{
+        z-index: 3;
+    }
+    .nav{
+        position: absolute;
+        background-color: #444242;
+        left: -100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 70px;
+        width: 50%;
+        height: 400px;
+    }
+    .nav li{
+        margin-bottom: 15px;
+        width: 100%;
+        border-bottom: #fff solid 1px;
+        padding-bottom: 4px;
+        padding-left: 10px;
+    }
+    .phone{
+        display: none;
+    }
+    .phone-mob{
+        display: block;
+        background: url(/img/tel.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 18px;
+        padding-left: 30px;
+        font-size: 14px;
+    }
+    .burger{
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        height: 16px;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 3;
+    }
+    .line{
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+    
+    /* ============ тело ============ */    
+    main{
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sc1{
+        width: 100%;
+        height: 603px;
+        background: url(/img/screen1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: fill;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 200px;
+        padding-left: 15px;
+    }
+    .sc1 h2{
+        width: 100%;
+        font-size: 12px; 
+        line-height: 28px; 
+        letter-spacing: 0.72px;
+    }
+    .sc1 h1{
+        margin: 0;
+        width: 90%;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    .sc1-bottom{
+        width: 100%;
+        flex-direction: column-reverse;
+        margin-top: 18px;
+        display: flex;
+        justify-content: none;
+        align-items: start;
+    }
+    .button{
+        background: var(--button-color);
+        text-align: center;
+        font-size: 14px;
+        line-height: 23px;
+        padding: 16px 21px;
+        align-self: center;
+    }
+    .icons{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 208px;
+        justify-content: space-between;
+    }
+    .icons img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .sc2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 12px;
+        padding-bottom: 20px;
+    }
+    .sc2 .address{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-bottom: #E7E7E7 solid 1px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 48px;
+    }
+    .sc2 .address h2{
+        width: 100%;
+        font-size: 20px;
+        text-align: left;
+    }
+    .sc2 .address p{
+        display: flex !important;
+        width: 100% !important;
+    }
+    .sc2 .address span{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .sc2 .address img{
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    .sc2 .img1{
+        display: none;
+    }
+    .sc2 .img2{
+        display: none;
+    }
+    .sc2 .rectangle{
+        display: none;
+    }
+    
+    .sc3{
+        height: 400px;
+        padding-top: 34px;
+    }
+    .swiper{
+        overflow-x: hidden;
+    }
+    .swiper-slider{
+        width: 100%;
+        height: 100%;
+    }
+    .swiper h2{
+        color: #D3B47F;
+        font-size: 20px;
+        width: 100%;
+        margin-top: 26px;
+    }
+    .swiper p{
+        margin-top: 14px;
+        font-size: 12px;
+        line-height: 26px;
+        width: 100%;
+    }
+    .swiper-button-prev{
+        display: none;
+    }
+    .swiper-button-next{
+        display: none;
+    }
+}

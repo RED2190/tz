@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/img/logo.ico" sizes="32x32">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+
+    <title>Tzeezotje</title>
+</head>
+<body>
+    <header>
+        <div class="burger" id="burger">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            
+        </div>
+        <img src="/img/logo.svg" alt="logo" class="logo">
+        <ul class="nav">
+            <li><a href="/">À la carte</a></li>
+            <li><a href="/">Wijnkaart</a></li>
+            <li><a href="/">Lunchmenu</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="tel:+3292825725" class="phone-mob">+32 9 282 57 25</a></li>
+        </ul>
+        <a href="tel:+3292825725" class="phone">+32 9 282 57 25</a>
+    </header>
+
+    <main>
+        <section class="sc1">
+            <h2>OPEN EVERYDAY 6AM - 9PM</h2>
+            <h1>A bad day with lunch is better than a good day without it.</h1>
+            <div class="sc1-bottom">
+
+                <button href="" class="button" id="reserve" onclick="onclick()">Reserve a table</button>
+
+                <div class="icons">
+                    <a href="/"><img src="/img/fb.svg" alt="fb"></a>
+                    <a href="/"><img src="/img/ig.svg" alt="ig"></a>
+                    <a href="/"><img src="/img/tw.svg" alt="tw"></a>
+                    <a href="/"><img src="/img/yt.svg" alt="yt"></a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="sc2">
+            <div class="address">
+                <h2>Woensdag 12/01</h2>
+                <p><span>Salade met Serrano</span><img src="/img/points.svg" alt="Pointers"><span>Steak Tartaar</span></p>
+            </div>
+            <div class="address">
+                <h2>Donderdag 13/01</h2>
+                <p><span>Toast Roquefort</span><img src="/img/points.svg" alt="Pointers"><span>Penne met Kip en Prei</span></p>
+            </div>
+            <div class="address">
+                <h2>Vrijdag 14/01</h2>
+                <p><span>Verrassing van de Chef</span><img src="/img/points.svg" alt="Pointers"><span>Penne met Kip en Prei</span></p>
+            </div>
+            <div class="address">
+                <h2>Vrijdag 15/01</h2>
+                <p><span>Verrassing van de Chef</span><img src="/img/points.svg" alt="Pointers"><span>Penne met Kip en Prei</span></p>
+            </div>
+            <div class="address">
+                <h2>Vrijdag 16/01</h2>
+                <p><span>Verrassing van de Chef</span><img src="/img/points.svg" alt="Pointers"><span>Penne met Kip en Prei</span></p>
+            </div>
+
+            <img src="/img/sc2-img1.png" alt="image 1" class="img1">
+            <img src="/img/sc2-img2.png" alt="image 2" class="img2">
+            <img src="/img/sc2-rectangle.png" alt="image 2" class="rectangle">
+        </section>
+
+        <section class="sc3">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/img/cov.svg" alt="Ковычки">
+                    <h2>Goede service, lekker eten, toffe ambiance</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="/img/cov.svg" alt="Ковычки">
+                    <h2>Goede service, lekker eten, toffe ambiance2</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="/img/cov.svg" alt="Ковычки">
+                    <h2>Goede service, lekker eten, toffe ambiance3</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</p>
+                  </div>
+                </div>
+                
+              
+                <img src="/img/arrow-left.svg" class="swiper-button-prev" />
+                <img src="/img/arrow-right.svg" class="swiper-button-next" />
+              
+              </div>
+        </section>
+    </main>
+    <div id="form">
+        <img src="/img/close.svg" alt="close" id="close">
+        <h1>Feedback</h1>
+        <p>Leave your phone number and we will call you back</p>
+        <label for="phone">Number</label>
+        <input type="phone" name="phone" id="phone">
+        <input type="button" id="sendBtn" value="Send">
+    </div>
+    <script src="/index.js"></script>
+
+</body>
+</html>
